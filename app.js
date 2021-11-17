@@ -10,13 +10,18 @@ const app = Vue.createApp({
     data() 
     {
         return{
-       
+            txtbx:'',
+            tasks: []
         };
     },
 
     methods: 
     {
         
+        li() 
+        {
+            this.tasks.push(this.txtbx)
+        }
         
 
     }
