@@ -11,7 +11,10 @@ const app = Vue.createApp({
     {
         return{
             txtbx:'',
-            tasks: []
+            tasks: [],
+            toggler: 'Hide',
+            tn: false,
+
         };
     },
 
@@ -21,8 +24,21 @@ const app = Vue.createApp({
         li() 
         {
             this.tasks.push(this.txtbx)
+        },
+
+        ToggleBtn()
+        {
+            this.tn = !this.tn
+
+            if (this.tn === true) 
+            {
+                this.toggler = 'Show List'
+            }
+            else 
+            {
+                this.toggler = 'Hide'
+            }
         }
-        
 
     }
    
