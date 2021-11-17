@@ -7,7 +7,20 @@ document.addEventListener('mousemove', (e) =>
 
 const app = Vue.createApp({
   
-    
+    data() 
+    {
+        return{
+       
+        };
+    },
+
+    methods: 
+    {
+        
+        
+
+    }
+   
 });
 
 app.mount('#assignment');
